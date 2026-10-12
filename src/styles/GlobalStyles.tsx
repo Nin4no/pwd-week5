@@ -1,9 +1,10 @@
+/* src/styles/GlobalStyles.tsx */
 /** @jsxImportSource @emotion/react */
 import { Global, css } from '@emotion/react';
 
 const GlobalStyles = () => (
-    <Global
-        styles={css`
+  <Global
+    styles={css`
       /* Emotion으로 관리할 글로벌 스타일 */
       a {
         color: inherit;
@@ -20,7 +21,7 @@ const GlobalStyles = () => (
         padding: 0 1rem;
       }
     `}
-    />
+  />
 );
 
 export default GlobalStyles;

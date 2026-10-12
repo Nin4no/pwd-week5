@@ -1,5 +1,4 @@
-/* src/components/NotFound.jsx */
-import React from 'react';
+/* src/components/NotFound.tsx */
 import { Link } from 'react-router-dom';
 import styled from '@emotion/styled';
 import { FaExclamationTriangle } from 'react-icons/fa';

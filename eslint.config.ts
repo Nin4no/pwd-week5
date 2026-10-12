@@ -12,11 +12,24 @@ export default defineConfig([
     extends: [
       js.configs.recommended,
       tseslint.configs.recommended,
-      reactHooks.configs.flat.recommended,
-      reactRefresh.configs.vite,
     ],
     languageOptions: {
-      globals: globals.browser,
+      ecmaVersion: 'latest',
     },
+    rules: {
+      '@typescript-eslint/consistent-type-imports': 'error',
+    },
+  },
+  {
+    files: ['src/**/*.{ts,tsx}'],
+    extends: [
+      reactHooks.configs['recommended-latest'],
+      reactRefresh.configs.vite,
+    ],
+    languageOptions: { globals: globals.browser },
+  },
+  {
+    files: ['*.config.ts'],
+    languageOptions: { globals: globals.node },
   },
 ])

@@ -1,5 +1,4 @@
-/* src/App.jsx */
-import React from 'react';
+/* src/App.tsx */
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ToastContainer } from 'react-toastify';
@@ -51,7 +50,7 @@ function App() {
             <p>© 2026 Ajou Campus Foodmap | Made with React</p>
           </footer>
         </div>
-        <ToastContainer
+        <ToastContainer 
           position="bottom-right"
           autoClose={3000}
           hideProgressBar={false}
